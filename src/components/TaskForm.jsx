@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const UserForm = ({onFormSubmit}) => {
+const TaskForm = ({onFormSubmit}) => {
     const [taskName, setTaskName] = useState();
 
     const onSubmit = (e) => {
@@ -22,4 +22,4 @@ const UserForm = ({onFormSubmit}) => {
     )
 }
 
-export default UserForm
+export default TaskForm
