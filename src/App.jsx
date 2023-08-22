@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import UserForm from './components/UserForm';
+import TaskForm from './components/TaskForm';
 
 const API_KEY = 'JVidXbN_N-Hgk1ZhPPhoLxWIQZbCgdd7cm3BPc3LCTgp2japkg'
 
@@ -74,7 +74,7 @@ function App() {
   }
   return (
     <div className="App">
-      <UserForm onFormSubmit={onFormSubmit}/>
+      <TaskForm onFormSubmit={onFormSubmit}/>
       <button onClick={getTasks}>GET tasks</button>
       <button onClick={() => setTaskList([])}>Clear tasks</button>
 
